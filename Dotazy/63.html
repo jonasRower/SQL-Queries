@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>63</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="18" class="pribuzny">18</button>
+        <button id="62" class="pribuzny">62</button>
+        <button id="64" class="pribuzny">64</button>
+        <button id="65" class="pribuzny">65</button>
+        <button id="66" class="pribuzny">66</button>
+        <button id="67" class="pribuzny">67</button>
+        <button id="68" class="pribuzny">68</button>
+        <button id="69" class="pribuzny">69</button>
+        <button id="70" class="pribuzny">70</button>
+        <button id="71" class="pribuzny">71</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            WHERE-LIKE<br>
+            &emsp;&emsp; První písmeno "N", třetí písmeno "I"<br>
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT *<br>
+                FROM salesman<br>
+                WHERE name LIKE 'N__l%'; 
+            </div>
+            <div>
+                SELECT * FROM salesman;
+            </div>
+        </div>    
+
+        
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>salesman_id</th>
+                            <th>name</th>
+                            <th>city</th>
+                            <th>commision</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5002</td>
+                            <td>Nail Knite</td>
+                            <td>Paris</td>
+                            <td>0.13</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>salesman_id</th>
+                            <th>name</th>
+                            <th>city</th>
+                            <th>commision</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5001</td>
+                            <td>James Hoog</td>
+                            <td>New York</td>
+                            <td>0.15</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5002</td>
+                            <td>Nail Knite</td>
+                            <td>Paris</td>
+                            <td>0.13</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5003</td>
+                            <td>Lauson Hen</td>
+                            <td>San Jose</td>
+                            <td>0.12</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5005</td>
+                            <td>Pit Alex</td>
+                            <td>London</td>
+                            <td>0.11</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5006</td>
+                            <td>Mc Lyon</td>
+                            <td>Paris</td>
+                            <td>0.14</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5007</td>
+                            <td>Paul Adam</td>
+                            <td>Rome</td>
+                            <td>0.13</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

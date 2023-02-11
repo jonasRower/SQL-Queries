@@ -1,0 +1,20 @@
+body {
+    background-color: #ECF3BF;
+  }
+
+  #h1Home{
+    color: darkred;  
+    text-align: center;
+  }
+  
+  #pHome { 
+    padding-left:60px;  
+    font: 13px Apple Chancery, cursive;
+    color: darkred;
+  }
+
+  #pHome2 { 
+    padding-left:60px;  
+    font: 13px Apple Chancery, cursive;
+    color: darkmagenta;
+  }

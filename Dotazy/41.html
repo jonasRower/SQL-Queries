@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>41</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="31" class="pribuzny">31</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            (450+550)/2 = 500<br>
+            Ačkoliv je AVG(pro_price), tak pro_price našel, jelikož sloupec je  "PRO_PRICE" (zde nerozlišuje velikost písmen)<br>
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT AVG(pro_price) FROM item_mast <br>
+                WHERE pro_com=16; 
+            </div>
+            <div>
+                SELECT * FROM item_mast<br> 
+                WHERE pro_com=16;
+            </div>
+        </div>    
+
+    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>AVG(pro_price)</th>
+                        </tr>
+                        <tr class="trL">
+                            <td>500</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+
+                        <tr>
+                            <th>PRO_ID</th>
+                            <th>PRO_NAME</th>
+                            <th>PRO_PRICE</th>
+                            <th>PRO_COM</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>102</td>
+                            <td>Key Board</td>
+                            <td>450</td>
+                            <td>16</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>104</td>
+                            <td>Speaker</td>
+                            <td>550</td>
+                            <td>16</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>51</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="50" class="pribuzny">50</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            WHERE-AND-OR<br>
+            &emsp;&emsp; Rozšíření výberu o "OR" - rozšíření příkladu |50|<br> 
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT * FROM orders <br>
+                WHERE (ord_date ='2012-09-10'<br>
+                AND salesman_id > 5004); 
+            </div>
+            <div>
+                SELECT * FROM orders <br> 
+                WHERE ((ord_date ='2012-09-10'<br> 
+                AND salesman_id > 5004)<br> 
+                OR purch_amt>1000.00);
+            </div>
+        </div>    
+        
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>ord_no</th>
+                            <th>purch_amt</th>
+                            <th>ord_date</th>
+                            <th>customer_id</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70009</td>
+                            <td>270.65</td>
+                            <td>2012-09-10</td>
+                            <td>3001</td>
+                            <td>5005</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>ord_no</th>
+                            <th>purch_amt</th>
+                            <th>ord_date</th>
+                            <th>customer_id</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70003</td>
+                            <td>2480.4</td>
+                            <td>2012-10-10</td>
+                            <td>3009</td>
+                            <td>5003</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70005</td>
+                            <td>2400.6</td>
+                            <td>2012-07-27</td>
+                            <td>3007</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70008</td>
+                            <td>5760</td>
+                            <td>2012-09-10</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70009</td>
+                            <td>270.65</td>
+                            <td>2012-09-10</td>
+                            <td>3001</td>
+                            <td>5005</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70010</td>
+                            <td>1983.43</td>
+                            <td>2012-10-10</td>
+                            <td>3004</td>
+                            <td>5006</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70013</td>
+                            <td>3045.6</td>
+                            <td>2012-04-25</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

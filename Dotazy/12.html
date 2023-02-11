@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>12</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="12b" class="pribuzny">12b</button>
+        <button id="11" class="pribuzny">11</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            WHERE - BETWEEN (výběr pomocí abecedy)
+        </infoText>
+    </div>
+
+    <body>
+        <div class="uvod">
+            <div>
+                SELECT * FROM zamestnanci<br>
+                WHERE prijmeni BETWEEN 'A' AND 'L';
+            </div>
+            <div>
+                SELECT * FROM zamestnanci;
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>os_cislo</th>
+                            <th>jmeno</th>
+                            <th>prijmeni</th>
+                            <th>funkce</th>  
+                            <th>datum_nastupu</th>
+                            <th>ulice</th>
+                            <th>cislo</th>
+                            <th>obec</th>
+                            <th>pocet_deti</th>  
+                            <th>nadrizeny</th> 
+                        </tr>
+                        <tr class='trL'>
+                            <td>11</td>
+                            <td>Filip</td>
+                            <td>Horáček</td>
+                            <td>prodejce</td>
+                            <td>2008-11-05</td>
+                            <td>Rybářská</td>
+                            <td>21</td>
+                            <td>Beroun</td>
+                            <td>1</td>
+                            <td>36</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>18</td>
+                            <td>Anežka</td>
+                            <td>Bubáčková</td>
+                            <td>účetní</td>
+                            <td>2009-02-27</td>
+                            <td>Karlovo nám.</td>
+                            <td>3</td>
+                            <td>Praha 1</td>
+                            <td></td>
+                            <td>62</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>24</td>
+                            <td>Emílie</td>
+                            <td>Kudláčková</td>
+                            <td>prodejce</td>
+                            <td>2012-01-25</td>
+                            <td>Hornická</td>
+                            <td>5</td>
+                            <td>Kladno - SÃ­tnÃ¡</td>
+                            <td>0</td>
+                            <td>36</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>62</td>
+                            <td>Alfons</td>
+                            <td>Karásek</td>
+                            <td>ředitel</td>
+                            <td>2013-06-12</td>
+                            <td>Vltavská</td>
+                            <td>12</td>
+                            <td>Praha - Zbraslav</td>
+                            <td>2</td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>115</td>
+                            <td>Jitka</td>
+                            <td>Horáčková</td>
+                            <td>vedoucí nákupu</td>
+                            <td>2015-11-15</td>
+                            <td>Ostrčillovo nám.</td>
+                            <td>12</td>
+                            <td>Praha 4</td>
+                            <td>3</td>
+                            <td>62</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>327</td>
+                            <td>Anežka</td>
+                            <td>Česká</td>
+                            <td>účetní</td>
+                            <td>2012-10-18</td>
+                            <td>Vězeňská</td>
+                            <td>8</td>
+                            <td>Praha 1</td>
+                            <td>0</td>
+                            <td>62</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+
+                        <tr>
+                            <th>os_cislo</th>
+                            <th>jmeno</th>
+                            <th>prijmeni</th>
+                            <th>funkce</th>  
+                            <th>datum_nastupu</th>
+                            <th>ulice</th>
+                            <th>cislo</th>
+                            <th>obec</th>
+                            <th>pocet_deti</th>  
+                            <th>nadrizeny</th> 
+                        </tr>
+                        <tr class='trR'>
+                            <td>11</td>
+                            <td>Filip</td>
+                            <td>Horáček</td>
+                            <td>prodejce</td>
+                            <td>2008-11-05</td>
+                            <td>Rybářská</td>
+                            <td>21</td>
+                            <td>Beroun</td>
+                            <td>1</td>
+                            <td>36</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>18</td>
+                            <td>Anežka</td>
+                            <td>Bubáčková</td>
+                            <td>účetní</td>
+                            <td>2009-02-27</td>
+                            <td>Karlovo nám.</td>
+                            <td>3</td>
+                            <td>Praha 1</td>
+                            <td></td>
+                            <td>62</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>19</td>
+                            <td>Cyprián</td>
+                            <td>Pitule</td>
+                            <td>nákupčí</td>
+                            <td>2010-01-25</td>
+                            <td>Letohradská</td>
+                            <td>12</td>
+                            <td>Praha 7</td>
+                            <td>1</td>
+                            <td>115</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>21</td>
+                            <td>Karel</td>
+                            <td>Novák</td>
+                            <td>prodejce</td>
+                            <td>2011-06-10</td>
+                            <td>V podhradí</td>
+                            <td>2</td>
+                            <td>Karlštejn</td>
+                            <td></td>
+                            <td>36</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>24</td>
+                            <td>Emílie</td>
+                            <td>Kudláčková</td>
+                            <td>prodejce</td>
+                            <td>2012-01-25</td>
+                            <td>Hornická</td>
+                            <td>5</td>
+                            <td>Kladno - SÃ­tnÃ¡</td>
+                            <td>0</td>
+                            <td>36</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>27</td>
+                            <td>Rudolf</td>
+                            <td>Opatrný</td>
+                            <td>nákupčí</td>
+                            <td>2017-03-15</td>
+                            <td>Lidická</td>
+                            <td>11</td>
+                            <td>Praha 5</td>
+                            <td>0</td>
+                            <td>115</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>36</td>
+                            <td>Josef</td>
+                            <td>Vomáčka</td>
+                            <td>vedoucí prodeje</td>
+                            <td>2016-09-10</td>
+                            <td>Horoměřická</td>
+                            <td>34</td>
+                            <td>Praha 6</td>
+                            <td>2</td>
+                            <td>62</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>62</td>
+                            <td>Alfons</td>
+                            <td>Karásek</td>
+                            <td>ředitel</td>
+                            <td>2013-06-12</td>
+                            <td>Vltavská</td>
+                            <td>12</td>
+                            <td>Praha - Zbraslav</td>
+                            <td>2</td>
+                            <td></td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>115</td>
+                            <td>Jitka</td>
+                            <td>Horáčková</td>
+                            <td>vedoucí nákupu</td>
+                            <td>2015-11-15</td>
+                            <td>Ostrčillovo nám.</td>
+                            <td>12</td>
+                            <td>Praha 4</td>
+                            <td>3</td>
+                            <td>62</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>327</td>
+                            <td>Anežka</td>
+                            <td>Česká</td>
+                            <td>účetní</td>
+                            <td>2012-10-18</td>
+                            <td>Vězeňská</td>
+                            <td>8</td>
+                            <td>Praha 1</td>
+                            <td>0</td>
+                            <td>62</td>
+                        </tr>
+                        
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

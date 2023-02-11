@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>46</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="X46" class="pribuzny">46b</button>
+        <button id="47" class="pribuzny">47</button>
+        <button id="48" class="pribuzny">48</button>
+        <button id="49" class="pribuzny">49</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Průnik výběru pomocí WHERE-AND<br>
+            &emsp;&emsp; Porovnej s příkladem |46b|<br>
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT * <br>
+                    FROM customer <br>
+                    WHERE city = 'New York' AND grade>100;
+            </div>
+            <div>
+                SELECT * FROM customer; 
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>customer_id</th>
+                            <th>cust_name</th>
+                            <th>city</th>
+                            <th>grade</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>3007</td>
+                            <td>Brad Davis</td>
+                            <td>New York</td>
+                            <td>200</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>customer_id</th>
+                            <th>cust_name</th>
+                            <th>city</th>
+                            <th>grade</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3001</td>
+                            <td>Brad Guzan</td>
+                            <td>London</td>
+                            <td></td>
+                            <td>5005</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3002</td>
+                            <td>Nick Rimando</td>
+                            <td>New York</td>
+                            <td>100</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3003</td>
+                            <td>Jozy Altidor</td>
+                            <td>Moscow</td>
+                            <td>200</td>
+                            <td>5007</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3004</td>
+                            <td>Fabian Johnson</td>
+                            <td>Paris</td>
+                            <td>300</td>
+                            <td>5006</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3005</td>
+                            <td>Graham Zusi</td>
+                            <td>California</td>
+                            <td>200</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3007</td>
+                            <td>Brad Davis</td>
+                            <td>New York</td>
+                            <td>200</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3008</td>
+                            <td>Julian Green</td>
+                            <td>London</td>
+                            <td>300</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3009</td>
+                            <td>Geoff Cameron</td>
+                            <td>Berlin</td>
+                            <td>100</td>
+                            <td>5003</td>
+                        </tr>
+                        
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

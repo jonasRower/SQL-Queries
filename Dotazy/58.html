@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>58</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="54" class="pribuzny">54</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Porovnání mezi opačnými znaménky s užitím "NOT"<br>
+            &emsp;&emsp; !! Ukázka vpravo porovnat s příkladem |54| ,kde "NOT" je užito před závorkou (..AND..) !!<br>
+            &emsp;&emsp;&emsp;&emsp; Zde "NOT" je užito před nerovností. 
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT * FROM orders <br>
+                WHERE(purch_amt<200 OR <br>
+                ord_date<'2012-02-10');
+            </div>
+            <div>
+                SELECT * FROM  orders <br> 
+                WHERE(purch_amt<200 OR <br> 
+                NOT ord_date>='2012-02-10');
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>ord_no</th>
+                            <th>purch_amt</th>
+                            <th>ord_date</th>
+                            <th>customer_id</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70001</td>
+                            <td>150.5</td>
+                            <td>2012-10-05</td>
+                            <td>3005</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70002</td>
+                            <td>65.26</td>
+                            <td>2012-10-05</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70004</td>
+                            <td>110.5</td>
+                            <td>2012-08-17</td>
+                            <td>3009</td>
+                            <td>5003</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70011</td>
+                            <td>75.29</td>
+                            <td>2012-08-17</td>
+                            <td>3003</td>
+                            <td>5007</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>ord_no</th>
+                            <th>purch_amt</th>
+                            <th>ord_date</th>
+                            <th>customer_id</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70001</td>
+                            <td>150.5</td>
+                            <td>2012-10-05</td>
+                            <td>3005</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70002</td>
+                            <td>65.26</td>
+                            <td>2012-10-05</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70004</td>
+                            <td>110.5</td>
+                            <td>2012-08-17</td>
+                            <td>3009</td>
+                            <td>5003</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70011</td>
+                            <td>75.29</td>
+                            <td>2012-08-17</td>
+                            <td>3003</td>
+                            <td>5007</td>
+                        </tr>
+
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>34</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="35" class="pribuzny">35</button>
+        <button id="37" class="pribuzny">37</button>
+        <button id="38" class="pribuzny">38</button>
+        <button id="39" class="pribuzny">39</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            WHERE-AND<br>
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT *<br>
+                FROM nobel_win<br>
+                WHERE year = 1970<br>
+                AND subject = 'Literature'; 
+            </div>
+            <div>
+                SELECT *<br> 
+                FROM nobel_win <br> 
+                WHERE year=1970;
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        
+                        <tr>
+                            <th>YEAR</th>
+                            <th>SUBJECT</th>
+                            <th>WINNER</th>
+                            <th>COUNTRY</th>
+                            <th>CATEGORY</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>1970</td>
+                            <td>Literature</td>
+                            <td>Aleksandr Solzhenitsyn</td>
+                            <td>Russia</td>
+                            <td>Linguist</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>YEAR</th>
+                            <th>SUBJECT</th>
+                            <th>WINNER</th>
+                            <th>COUNTRY</th>
+                            <th>CATEGORY</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Physics</td>
+                            <td>Hannes Alfven</td>
+                            <td>Sweden</td>
+                            <td>Scientist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Physics</td>
+                            <td>Louis Neel</td>
+                            <td>France</td>
+                            <td>Scientist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Chemistry</td>
+                            <td>Luis Federico Leloir</td>
+                            <td>France</td>
+                            <td>Scientist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Physiology</td>
+                            <td>Ulf von Euler</td>
+                            <td>Sweden</td>
+                            <td>Scientist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Physiology</td>
+                            <td>Bernard Katz</td>
+                            <td>Germany</td>
+                            <td>Scientist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Literature</td>
+                            <td>Aleksandr Solzhenitsyn</td>
+                            <td>Russia</td>
+                            <td>Linguist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Economics</td>
+                            <td>Paul Samuelson</td>
+                            <td>USA</td>
+                            <td>Economist</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1970</td>
+                            <td>Physiology</td>
+                            <td>Julius Axelrod</td>
+                            <td>USA</td>
+                            <td>Scientist</td>
+                        </tr>
+
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

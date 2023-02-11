@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>20</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="27" class="pribuzny">27</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            ORDER BY, DESC <br>
+        </infoText>
+    </div>
+
+    <body>
+        <div class="uvod">
+            <div>
+                SELECT cislo, nazev, cena, sklad<br> 
+                FROM Vyrobky<br> 
+                WHERE sklad=1<br>  
+                ORDER BY cena DESC LIMIT 3; 
+            </div>
+            <div>
+                SELECT cislo, nazev, cena, sklad <br> 
+                FROM Vyrobky <br> 
+                WHERE sklad=1 ORDER BY cena DESC;
+            </div>
+        </div>    
+
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>cislo</th>
+                            <th>nazev</th>
+                            <th>cena</th>
+                            <th>sklad</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>45</td>
+                            <td>Sýr Eidam</td>
+                            <td>129</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>23</td>
+                            <td>Rum tuzemský</td>
+                            <td>69.3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>54</td>
+                            <td>Tlačenka tmavá</td>
+                            <td>67</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>cislo</th>
+                            <th>nazev</th>
+                            <th>cena</th>
+                            <th>sklad</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>45</td>
+                            <td>Sýr Eidam</td>
+                            <td>129</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>23</td>
+                            <td>Rum tuzemský</td>
+                            <td>69.3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>54</td>
+                            <td>Tlačenka tmavá</td>
+                            <td>67</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>24</td>
+                            <td>Coca cola Light 2 l</td>
+                            <td>29.8</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>12</td>
+                            <td>Cukr moučka</td>
+                            <td>20.3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>11</td>
+                            <td>Cukr krystal</td>
+                            <td>19.9</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>72</td>
+                            <td>Čokoláda mléčná</td>
+                            <td>18.9</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>71</td>
+                            <td>Čaj černý</td>
+                            <td>12.6</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>42</td>
+                            <td>Jogurt bÃ­lÃ½</td>
+                            <td>6.3</td>
+                            <td>1</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

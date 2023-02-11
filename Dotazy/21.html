@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>21</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="22" class="pribuzny">22</button>
+        <button id="23" class="pribuzny">23</button>
+        <button id="24" class="pribuzny">24</button>
+        <button id="25" class="pribuzny">25</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Porovnání "WHERE-AND" a "WHERE BETWEEN" <br>
+        </infoText>
+    </div>
+
+    <body>
+        <div class="uvod">
+            <div>
+                SELECT ucet, obrat, VS<br>
+                FROM Obraty<br>
+                WHERE obrat >= 1780 AND obrat <= 3600; 
+            </div>
+            <div>
+                SELECT ucet, obrat, VS<br>
+                FROM Obraty<br>
+                WHERE obrat BETWEEN 1780 AND 3600;
+            </div>
+        </div>    
+
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>ucet</th>
+                            <th>obrat</th>
+                            <th>VS</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>11-2358756/0100</td>
+                            <td>1780</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>11-2358756/0100</td>
+                            <td>1920</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>102203125/0800</td>
+                            <td>2500</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>102203125/0800</td>
+                            <td>3600</td>
+                            <td>0020514789</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>ucet</th>
+                            <th>obrat</th>
+                            <th>VS</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>11-2358756/0100</td>
+                            <td>1780</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>11-2358756/0100</td>
+                            <td>1920</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>102203125/0800</td>
+                            <td>2500</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>102203125/0800</td>
+                            <td>3600</td>
+                            <td>0020514789</td>
+                        </tr>
+                        
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

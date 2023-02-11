@@ -1,0 +1,57 @@
+  
+ 
+    /* Style the header */
+  header 
+  {
+      padding: 13px;
+  }
+  
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tabulka
+{
+    position: relative;
+    top: 15px;
+    left: 0%;
+    height: 400px; 
+    width: 100%; 
+    overflow-y: scroll; 
+    vertical-align: top;
+}
+
+table 
+{
+    font-family:verdana;
+    font-size: 13px;
+    color: darkblue;
+    border-collapse: collapse;
+    overflow-y: scroll; 
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#vyberInfo{
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  float:left;
+  left: 70px;
+  color:blueviolet;
+}
+
+#pocetPolozek{
+  position: absolute;
+  float:left;
+  left: 500px;
+  color:blueviolet;
+}

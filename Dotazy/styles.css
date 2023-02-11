@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+  }
+  
+      body {
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+  
+      /* Style the header */
+      header 
+      {
+          padding: 13px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+      }
+  
+      /* Clear floats after the columns */
+      section::after 
+      {
+          content: "";
+          display: table;
+          clear: both;
+      }
+  
+      #uvodContainer 
+      {
+        position: fixed;
+      }
+
+      .uvod 
+      {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 5px;
+          padding-left: 12px;
+      }
+  
+      .uvod div::before 
+      {
+          content: "";
+          padding-bottom: 30%;
+          vertical-align: top;
+      }
+  
+      .containerTable 
+      {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+  
+      }
+  
+      .left-half 
+      {
+          position: relative;
+          top: 0px;
+          left: 0%;
+          height: 450px; 
+          width: 100%; 
+          overflow-x: scroll; 
+          overflow-y: scroll; 
+          vertical-align: top;
+      }
+  
+      .right-half 
+      {
+          position: relative;
+          top: 0px;
+          left: 0%;
+          height: 450px; 
+          width: 100%; 
+          overflow-x: scroll; 
+          overflow-y: scroll; 
+          vertical-align: top;
+      }
+  
+      .left-half-head 
+      {
+          position: relative;
+          top: 0px;
+          left: 0%;
+          height: 10px; 
+          vertical-align: top;
+          display: inline-block;
+      }
+
+      #headLeft
+      {
+        background-color:#00ace6;
+      }
+  
+      .right-half-head
+      {
+          position: relative;
+          top: 0px;
+          left: 0%;
+          height: 10px; 
+          vertical-align: top;
+          display: inline-block;
+      }
+
+      #headRight
+      {
+        background-color:#00ace6;
+      }
+  
+  
+  
+      .container 
+      {
+          position: fixed;
+          top: 100px;
+      }   
+  
+      table 
+      {
+          font-family:verdana;
+          font-size: 13px;
+          color: darkblue;
+          border-collapse: collapse;
+          width: 100%;
+          word-wrap: break-word;
+      }
+  
+      tr:nth-child(even) {
+          background-color: lightblue;
+      }
+
+      #infoDiv {
+        padding: 4px;  
+        background-color: lightpink;
+        margin-left: 12px;
+        margin-bottom: 12px;
+        margin-right: 12px;
+        font: 1px;
+      }
+
+      #InfoButt {
+          float:left;
+          margin-bottom: 12px;
+          width: 80px;
+      }
+
+      infoText {
+          font: 13px Apple Chancery, cursive;
+          color: darkred;
+          padding: 4px;  
+      }
+
+      porovnatText {
+        padding: 4px;  
+        padding-left: 130px; 
+      }
+
+      #ribbon{
+        padding:12px;
+        color: darkslateblue;
+      }

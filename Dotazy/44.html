@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>44</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="42" class="pribuzny">42</button>
+        <button id="43" class="pribuzny">43</button>
+        <button id="45" class="pribuzny">45</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Porovnání AVG s a bez "GROUP BY"<br>
+            &emsp;&emsp; Ačkoliv je u dotazu vpravo sloupec "pro_com", zobrazí se pouze 1. hodnota - chybně<br>
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT AVG(pro_price), pro_com<br>
+                FROM item_mast<br>
+                GROUP BY pro_com; 
+            </div>
+            <div>
+                SELECT AVG(pro_price), pro_com<br> 
+                FROM item_mast;
+            </div>
+        </div>    
+
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>AVG(pro_price)</th>
+                            <th>pro_com</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>3200</td>
+                            <td>15</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>500</td>
+                            <td>16</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>250</td>
+                            <td>14</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>5000</td>
+                            <td>11</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>650</td>
+                            <td>12</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>1475</td>
+                            <td>13</td>
+                        </tr>
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>AVG(pro_price)</th>
+                            <th>pro_com</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1435</td>
+                            <td>15</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

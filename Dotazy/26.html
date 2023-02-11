@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>26</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="13" class="pribuzny">13</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Sloučení podmínky "<" a "IS NULL" pomocí "OR"<br>
+        </infoText>
+    </div>
+
+    <body>  
+        <div class="uvod">
+            <div>
+                SELECT os_cislo, jmeno, prijmeni, pocet_deti<br>
+                FROM Zamestnanci<br>
+                WHERE pocet_deti<2 OR pocet_deti IS NULL;
+            </div>
+            <div>
+                SELECT os_cislo, jmeno, prijmeni, pocet_deti<br> 
+                FROM Zamestnanci;
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>os_cislo</th>
+                            <th>jmeno</th>
+                            <th>prijmeni</th>
+                            <th>pocet_deti</th>  
+                        </tr>
+                        <tr class='trL'>
+                            <td>11</td>
+                            <td>Filip</td>
+                            <td>Horáček</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>18</td>
+                            <td>Anežka</td>
+                            <td>Bubáčková</td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>19</td>
+                            <td>Cyprián</td>
+                            <td>Pitule</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>21</td>
+                            <td>Karel</td>
+                            <td>Novák</td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>24</td>
+                            <td>Emílie</td>
+                            <td>Kudláčková</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>27</td>
+                            <td>Rudolf</td>
+                            <td>Opatrný</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>327</td>
+                            <td>Anežka</td>
+                            <td>Česká</td>
+                            <td>0</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>os_cislo</th>
+                            <th>jmeno</th>
+                            <th>prijmeni</th>
+                            <th>pocet_deti</th>  
+                        </tr>
+                        <tr class='trR'>
+                            <td>11</td>
+                            <td>Filip</td>
+                            <td>Horáček</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>18</td>
+                            <td>Anežka</td>
+                            <td>Bubáčková</td>
+                            <td></td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>19</td>
+                            <td>Cyprián</td>
+                            <td>Pitule</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>21</td>
+                            <td>Karel</td>
+                            <td>Novák</td>
+                            <td></td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>24</td>
+                            <td>Emílie</td>
+                            <td>Kudláčková</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>27</td>
+                            <td>Rudolf</td>
+                            <td>Opatrný</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>36</td>
+                            <td>Josef</td>
+                            <td>Vomáčka</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>62</td>
+                            <td>Alfons</td>
+                            <td>Karásek</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>115</td>
+                            <td>Jitka</td>
+                            <td>Horáčková</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>327</td>
+                            <td>Anežka</td>
+                            <td>Česká</td>
+                            <td>0</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

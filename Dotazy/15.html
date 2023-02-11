@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>15</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="9" class="pribuzny">9</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            "IN" a "OR" vrací stejné výsledky &emsp;&emsp; (podle data)<br>
+        </infoText>
+    </div>
+
+    <body>
+        <div class="uvod">
+            <div>    
+                SELECT * FROM Obraty<br> 
+                WHERE datum IN('2018-02-01', '2018-02-28'); 
+            </div>
+            <div>
+                SELECT * FROM Obraty <br> 
+                WHERE datum = '2018-02-01' OR datum = '2018-02-28';
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>id</th>
+                            <th>ucet</th>
+                            <th>datum</th>
+                            <th>obrat</th>
+                            <th>VS</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>6</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-01</td>
+                            <td>2500</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>9</td>
+                            <td>40513281/0800</td>
+                            <td>2018-02-28</td>
+                            <td>7850</td>
+                            <td>1023458778</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>14</td>
+                            <td>0235609/2700</td>
+                            <td>2018-02-01</td>
+                            <td>18300</td>
+                            <td>0235609025</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>id</th>
+                            <th>ucet</th>
+                            <th>datum</th>
+                            <th>obrat</th>
+                            <th>VS</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>6</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-01</td>
+                            <td>2500</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>9</td>
+                            <td>40513281/0800</td>
+                            <td>2018-02-28</td>
+                            <td>7850</td>
+                            <td>1023458778</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>14</td>
+                            <td>0235609/2700</td>
+                            <td>2018-02-01</td>
+                            <td>18300</td>
+                            <td>0235609025</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

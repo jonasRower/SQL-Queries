@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>59</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="59b" class="pribuzny">59b</button>
+        <button id="59c" class="pribuzny">59c</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Porovnání výběru a celé tabulky<br>
+            &emsp;&emsp; Je vynechán řádek s or_no = "7004", "7011" a "7012"<br>
+            &emsp;&emsp; Jedná se o data  "2012-08-17",  "2012-08-17" a "2012-06-27"<br>
+            &emsp;&emsp; Vynechání "2012-08-17" je pochopitelné -> NOT((ord_date ='2012-08-17'<br>
+            &emsp;&emsp; Proč je vynecháno "2012-06-27" u ord_no="7012" ?? - vysvětlení je ukázáno u |59b| a |59c|
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT * FROM  orders <br>
+                WHERE NOT((ord_date ='2012-08-17' <br>
+                OR customer_id>3005) <br>
+                AND purch_amt<1000); 
+            </div>
+            <div>
+                SELECT * FROM  orders; 
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>ord_no</th>
+                            <th>purch_amt</th>
+                            <th>ord_date</th>
+                            <th>customer_id</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70001</td>
+                            <td>150.5</td>
+                            <td>2012-10-05</td>
+                            <td>3005</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70002</td>
+                            <td>65.26</td>
+                            <td>2012-10-05</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70003</td>
+                            <td>2480.4</td>
+                            <td>2012-10-10</td>
+                            <td>3009</td>
+                            <td>5003</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70005</td>
+                            <td>2400.6</td>
+                            <td>2012-07-27</td>
+                            <td>3007</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70007</td>
+                            <td>948.5</td>
+                            <td>2012-09-10</td>
+                            <td>3005</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70008</td>
+                            <td>5760</td>
+                            <td>2012-09-10</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70009</td>
+                            <td>270.65</td>
+                            <td>2012-09-10</td>
+                            <td>3001</td>
+                            <td>5005</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70010</td>
+                            <td>1983.43</td>
+                            <td>2012-10-10</td>
+                            <td>3004</td>
+                            <td>5006</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>70013</td>
+                            <td>3045.6</td>
+                            <td>2012-04-25</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>ord_no</th>
+                            <th>purch_amt</th>
+                            <th>ord_date</th>
+                            <th>customer_id</th>
+                            <th>salesman_id</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70001</td>
+                            <td>150.5</td>
+                            <td>2012-10-05</td>
+                            <td>3005</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70002</td>
+                            <td>65.26</td>
+                            <td>2012-10-05</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70003</td>
+                            <td>2480.4</td>
+                            <td>2012-10-10</td>
+                            <td>3009</td>
+                            <td>5003</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70004</td>
+                            <td>110.5</td>
+                            <td>2012-08-17</td>
+                            <td>3009</td>
+                            <td>5003</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70005</td>
+                            <td>2400.6</td>
+                            <td>2012-07-27</td>
+                            <td>3007</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70007</td>
+                            <td>948.5</td>
+                            <td>2012-09-10</td>
+                            <td>3005</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70008</td>
+                            <td>5760</td>
+                            <td>2012-09-10</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70009</td>
+                            <td>270.65</td>
+                            <td>2012-09-10</td>
+                            <td>3001</td>
+                            <td>5005</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70010</td>
+                            <td>1983.43</td>
+                            <td>2012-10-10</td>
+                            <td>3004</td>
+                            <td>5006</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70011</td>
+                            <td>75.29</td>
+                            <td>2012-08-17</td>
+                            <td>3003</td>
+                            <td>5007</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70012</td>
+                            <td>250.45</td>
+                            <td>2012-06-27</td>
+                            <td>3008</td>
+                            <td>5002</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>70013</td>
+                            <td>3045.6</td>
+                            <td>2012-04-25</td>
+                            <td>3002</td>
+                            <td>5001</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>53</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="52" class="pribuzny">52</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Porovnání "AND" a "BETWEEN" , zde vrací stejné výsledky<br>
+            &emsp;&emsp; Celá tabulka salesman je v příkladu |52|<br> 
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT salesman_id,name,city,commission <br>
+                FROM salesman <br>
+                WHERE (commission > 0.10 <br>
+                AND commission< 0.12); 
+            </div>
+            <div>
+                SELECT salesman_id,name,city,commission <br> 
+                FROM salesman <br> 
+                WHERE (commission BETWEEN 0.10 AND 0.12);
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>salesman_id</th>
+                            <th>name</th>
+                            <th>city</th>
+                            <th>commision</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>5003</td>
+                            <td>Lauson Hen</td>
+                            <td>San Jose</td>
+                            <td>0.12</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>5005</td>
+                            <td>Pit Alex</td>
+                            <td>London</td>
+                            <td>0.11</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>salesman_id</th>
+                            <th>name</th>
+                            <th>city</th>
+                            <th>commision</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5003</td>
+                            <td>Lauson Hen</td>
+                            <td>San Jose</td>
+                            <td>0.12</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5005</td>
+                            <td>Pit Alex</td>
+                            <td>London</td>
+                            <td>0.11</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+    
+</html>

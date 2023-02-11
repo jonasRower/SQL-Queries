@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>14</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="1" class="pribuzny">1</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            WHERE-IN  <br>
+        </infoText>
+    </div>
+
+    <body>
+        <div class="uvod">
+            <div>
+                SELECT * FROM Obraty<br> 
+                WHERE vs IN('4587102', '0020514789');
+            </div>
+            <div>
+                SELECT * FROM Obraty;
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>id</th>
+                            <th>ucet</th>
+                            <th>datum</th>
+                            <th>obrat</th>
+                            <th>VS</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>3</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-03-02</td>
+                            <td>4590</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>4</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-02-18</td>
+                            <td>1780</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>5</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-02-10</td>
+                            <td>1920</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>6</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-01</td>
+                            <td>2500</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>7</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-06</td>
+                            <td>3600</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>8</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-03-02</td>
+                            <td>14590</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>10</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-02-22</td>
+                            <td>8700</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>id</th>
+                            <th>ucet</th>
+                            <th>datum</th>
+                            <th>obrat</th>
+                            <th>VS</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>1</td>
+                            <td>0235609/2700</td>
+                            <td>2018-03-01</td>
+                            <td>8300</td>
+                            <td>20181052</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>2</td>
+                            <td>102203125/0800</td>
+                            <td>2018-03-02</td>
+                            <td>5000</td>
+                            <td>0023154891</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>3</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-03-02</td>
+                            <td>4590</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>4</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-02-18</td>
+                            <td>1780</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>5</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-02-10</td>
+                            <td>1920</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>6</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-01</td>
+                            <td>2500</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>7</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-06</td>
+                            <td>3600</td>
+                            <td>0020514789</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>8</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-03-02</td>
+                            <td>14590</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>9</td>
+                            <td>40513281/0800</td>
+                            <td>2018-02-28</td>
+                            <td>7850</td>
+                            <td>1023458778</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>10</td>
+                            <td>11-2358756/0100</td>
+                            <td>2018-02-22</td>
+                            <td>8700</td>
+                            <td>4587102</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>11</td>
+                            <td>0235609/2700</td>
+                            <td>2018-02-20</td>
+                            <td>11400</td>
+                            <td>4002154889</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>12</td>
+                            <td>0235609/2700</td>
+                            <td>2018-02-08</td>
+                            <td>12540</td>
+                            <td>2018456</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>13</td>
+                            <td>40513281/0800</td>
+                            <td>2018-02-07</td>
+                            <td>15200</td>
+                            <td>1023458778</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>14</td>
+                            <td>0235609/2700</td>
+                            <td>2018-02-01</td>
+                            <td>18300</td>
+                            <td>0235609025</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>15</td>
+                            <td>40513281/0800</td>
+                            <td>2018-02-15</td>
+                            <td>24200</td>
+                            <td>1023458778</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>16</td>
+                            <td>102203125/0800</td>
+                            <td>2018-02-18</td>
+                            <td>31540</td>
+                            <td>502314871</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

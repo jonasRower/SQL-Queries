@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>69</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="62" class="pribuzny">62</button>
+        <button id="63" class="pribuzny">63</button>
+        <button id="64" class="pribuzny">64</button>
+        <button id="65" class="pribuzny">65</button>
+        <button id="66" class="pribuzny">66</button>
+        <button id="67" class="pribuzny">67</button>
+        <button id="68" class="pribuzny">68</button>
+        <button id="70" class="pribuzny">70</button>
+        <button id="71" class="pribuzny">71</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            WHERE-LIKE<br>
+            &emsp;&emsp; Záznam neobsahuje dvojici znaků jdoucích za sebou "_/"<br>
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT *<br>
+                FROM testtable<br>
+                WHERE col1 NOT LIKE '%/_//%' ESCAPE '/'; 
+            </div>
+            <div>
+                SELECT * FROM testtable;
+            </div>
+        </div>    
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>col1</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001_DJ-402-2014-2015</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001/DJ_401</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001/DJ_402%452015/300</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ_40244</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001/DJ_402442015</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001/DJ_402452015%100</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001/DJ-402%452015/200</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A001/DJ-40244</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>A002_DJ-401-2014-2015</td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>col1</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001_DJ-402-2014-2015</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001_DJ-40244_/100/2015</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ_401</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ_402%452015/300</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ_40244</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ_402442015</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ_402452015%100</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ-402%452015/200</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ-40244</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A001/DJ-40244_/100/2015</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>A002_DJ-401-2014-2015</td>
+                        </tr>
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>

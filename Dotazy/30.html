@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>30</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <div id="ribbon">
+        <button id="InfoButt" onclick="myFunction()">Info</button>
+        <porovnatText>Porovnat s příbuzným : </porovnatText>
+        <button id="30b" class="pribuzny">30b</button>
+    </div>
+
+    <div id="infoDiv">
+        <infoText>
+            Výběr pomocí "OR-BETWEEN"<br>
+            &emsp;&emsp; Tj. sjednocení intervalů <10 , 20> a <100 , 140><br>
+            &emsp;&emsp; Pozn. : V příkladu |30b| je demonstrován výběr "AND-BETWEEN"
+        </infoText>
+    </div>
+
+    <body> 
+        <div class="uvod">
+            <div>
+                SELECT cislo, nazev, cena<br>
+                FROM Vyrobky<br>
+                WHERE cena <br>
+                BETWEEN 10 AND 20 OR cena BETWEEN 100 AND 140; 
+            </div>
+            <div>
+                SELECT cislo, nazev, cena<br> 
+                FROM Vyrobky;
+            </div>
+        </div>    
+
+
+        <header>
+
+            <div class="containerTable">
+                <div class="left-half">
+
+                    <table border="1" cellpadding="10px" id="tableLeft">
+
+                        <tr>
+                            <th>cislo</th>
+                            <th>nazev</th>
+                            <th>cena</th>
+                        </tr>
+                        <tr class='trL'>
+                            <td>11</td>
+                            <td>Cukr krystal</td>
+                            <td>19.9</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>21</td>
+                            <td>Pivo Gambrinus desítka</td>
+                            <td>16.85</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>41</td>
+                            <td>Mléko polotučné</td>
+                            <td>11.3</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>43</td>
+                            <td>Mléko polotučné trvanlivé</td>
+                            <td>12.3</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>45</td>
+                            <td>Sýr Eidam</td>
+                            <td>129</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>51</td>
+                            <td>Salám turistický</td>
+                            <td>125</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>61</td>
+                            <td>Chléb Šumava</td>
+                            <td>14.9</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>71</td>
+                            <td>Čaj černý</td>
+                            <td>12.6</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td>72</td>
+                            <td>Čokoláda mléčná</td>
+                            <td>18.9</td>
+                        </tr>
+                        <tr class='trL'>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+
+                </div>  
+
+
+                <div class="right-half">
+                            
+                    <table border="1" cellpadding="10px" id="tableRight">
+
+                        <tr>
+                            <th>cislo</th>
+                            <th>nazev</th>
+                            <th>cena</th>
+                        </tr>
+                        <tr class='trR'>
+                            <td>11</td>
+                            <td>Cukr krystal</td>
+                            <td>19.9</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>12</td>
+                            <td>Cukr moučka</td>
+                            <td>20.3</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>21</td>
+                            <td>Pivo Gambrinus desítka</td>
+                            <td>16.85</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>22</td>
+                            <td>Pivo Prazdroj plechovka</td>
+                            <td>21.67</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>23</td>
+                            <td>Rum tuzemský</td>
+                            <td>69.3</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>24</td>
+                            <td>Coca cola Light 2 l</td>
+                            <td>29.8</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>25</td>
+                            <td>Džus pomerančový</td>
+                            <td>23.5</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>41</td>
+                            <td>Mléko polotučné</td>
+                            <td>11.3</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>42</td>
+                            <td>Jogurt bílý</td>
+                            <td>6.3</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>43</td>
+                            <td>Mléko polotučné trvanlivé</td>
+                            <td>12.3</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>44</td>
+                            <td>Sýr hermelín</td>
+                            <td>21.5</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>45</td>
+                            <td>Sýr Eidam</td>
+                            <td>129</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>51</td>
+                            <td>Salám turistický</td>
+                            <td>125</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>52</td>
+                            <td>Špekáčky</td>
+                            <td>75</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>53</td>
+                            <td>Tlačenka sváteční</td>
+                            <td>76</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>54</td>
+                            <td>Tlačenka tmavá</td>
+                            <td>67</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>61</td>
+                            <td>Chléb Šumava</td>
+                            <td>14.9</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>62</td>
+                            <td>Rohlík zakroucený</td>
+                            <td>1.5</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>63</td>
+                            <td>Dalamánek</td>
+                            <td>2.7</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>71</td>
+                            <td>Čaj černý</td>
+                            <td>12.6</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>72</td>
+                            <td>Čokoláda mléčná</td>
+                            <td>18.9</td>
+                        </tr>
+                        <tr class='trR'>
+                            <td>81</td>
+                            <td>Káva Nella Gold</td>
+                            <td>98.9</td>
+                        </tr>
+
+
+                    </table>	
+                    
+                </div>
+            </div>
+
+        </header>
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptInfo.js"></script>
+    <script src="scriptScroll.js"></script>
+    <script src="scriptComparison.js"></script>
+
+</html>
