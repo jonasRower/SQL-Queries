@@ -5,7 +5,7 @@
     <th>Age</th>
   </tr>
   <tr>
-    <td>**`Some text`**</td>
+    <td>Some text</td>
     <td>Smith</td>
     <td>43</td>
   </tr>
