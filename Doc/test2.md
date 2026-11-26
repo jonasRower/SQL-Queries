@@ -1,7 +1,7 @@
 
 <table style="width:100%">
   <tr>
-    <th colspan="2">Name<br>Name</th>
+    <th colspan="2">$\color{blue}{\text{some text}}$<br>$\color{blue}{\text{some text}}$</th>
     <th>Age</th>
   </tr>
   <tr>
