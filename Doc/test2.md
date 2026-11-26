@@ -1,7 +1,7 @@
 
 <table style="width:100%">
   <tr>
-    <th colspan="2">Name</th>
+    <th colspan="2">Name<br>Name</th>
     <th>Age</th>
   </tr>
   <tr>
