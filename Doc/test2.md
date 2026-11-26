@@ -6,7 +6,7 @@
   </tr>
   <tr>
     <td>Some text <b> and this is bold text</b></td>
-    <td><div>style="color:blue"Smith</div></td>
+    <td>smile</td>
     <td>43</td>
   </tr>
   <tr>
