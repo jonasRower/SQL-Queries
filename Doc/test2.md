@@ -5,7 +5,7 @@
     <th>Age</th>
   </tr>
   <tr>
-    <td>Some text <b> and this is bold text</b></td>
+    <td>Some text <b style="color:blue"> and this is bold text</b></td>
     <td>Smith</td>
     <td>43</td>
   </tr>
