@@ -6,7 +6,7 @@
   </tr>
   <tr>
     <td>Some text <b> and this is bold text</b></td>
-    <td>smile</td>
+    <td>$\color{blue}{\text{some text}}$</td>
     <td>43</td>
   </tr>
   <tr>
