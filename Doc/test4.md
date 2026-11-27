@@ -1,7 +1,7 @@
 <table>
     <tr>
         <th colspan="7">$\color{blue}{\text{SE}}\color{blue}{\text{LECT * FROM faktury}}$<br>$\color{blue}{\text{WHERE odberatel IN(1, 11, 47, 112);}}$</th>
-        <th rowspan=20></th>
+        <th></th>
         <th colspan="7">$\color{blue}{\text{SE}}\color{blue}{\text{LECT * FROM faktury;}}$</th>
     </tr>
     <tr>
@@ -28,7 +28,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
         <td>2017/101</td>
         <td>6</td>
         <td>Thu Nov 02 2017</td>
@@ -45,7 +44,6 @@
         <td>17185.6</td>
         <td>Sun Dec 10 2017</td>
         <td></td>
-        <td></td>
         <td>2017/102</td>
         <td>11</td>
         <td>Wed Nov 22 2017</td>
@@ -62,7 +60,6 @@
         <td>16145.9</td>
         <td>Sat Dec 30 2017</td>
         <td></td>
-        <td></td>
         <td>2017/103</td>
         <td>47</td>
         <td>Mon Nov 27 2017</td>
@@ -79,7 +76,6 @@
         <td>1867.45</td>
         <td>Wed Dec 20 2017</td>
         <td></td>
-        <td></td>
         <td>2017/104</td>
         <td>1</td>
         <td>Mon Nov 27 2017</td>
@@ -96,7 +92,6 @@
         <td>97108.5</td>
         <td>Fri May 18 2018</td>
         <td></td>
-        <td></td>
         <td>2017/105</td>
         <td>11</td>
         <td>Fri Dec 01 2017</td>
@@ -106,7 +101,6 @@
         <td></td>
     </tr>
     <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -130,7 +124,6 @@
         <td>65341.7</td>
         <td>Tue Dec 19 2017</td>
         <td></td>
-        <td></td>
         <td>2017/107</td>
         <td>112</td>
         <td>Tue Dec 12 2017</td>
@@ -140,7 +133,6 @@
         <td></td>
     </tr>
     <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -164,7 +156,6 @@
         <td>4728.24</td>
         <td></td>
         <td></td>
-        <td></td>
         <td>2018/1</td>
         <td>47</td>
         <td>Wed Jan 03 2018</td>
@@ -174,7 +165,6 @@
         <td></td>
     </tr>
     <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -198,7 +188,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
         <td>2018/2</td>
         <td>8</td>
         <td>Wed Jan 10 2018</td>
@@ -208,7 +197,6 @@
         <td></td>
     </tr>
     <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -232,7 +220,6 @@
         <td>1871.1</td>
         <td>Tue Feb 20 2018</td>
         <td></td>
-        <td></td>
         <td>2018/4</td>
         <td>47</td>
         <td>Sun Jan 28 2018</td>
@@ -242,7 +229,6 @@
         <td></td>
     </tr>
     <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -266,7 +252,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
         <td>2018/6</td>
         <td>6</td>
         <td>Fri Feb 16 2018</td>
@@ -276,7 +261,6 @@
         <td>Poslána upomínka 30.3.2018</td>
     </tr>
     <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -300,7 +284,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
         <td>2018/8</td>
         <td>12</td>
         <td>Wed Feb 21 2018</td>
@@ -316,7 +299,6 @@
         <td>Mon Apr 30 2018</td>
         <td>47263.1</td>
         <td>Tue May 08 2018</td>
-        <td></td>
         <td></td>
         <td>2018/9</td>
         <td>112</td>
