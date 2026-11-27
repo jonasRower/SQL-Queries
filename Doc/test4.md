@@ -1,7 +1,20 @@
 <table>
     <tr>
         <th>SELECT * FROM faktury<br>WHERE odberatel IN(1, 11, 47, 112);</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
         <th>SELECT * FROM faktury;</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
     </tr>
     <tr>
         <td>cislo</td>
