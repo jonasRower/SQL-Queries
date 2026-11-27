@@ -40,13 +40,16 @@ Některé tabulky nemusejí být zatím správně....
 | [# 22 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/22.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 1780 AND obrat <= 3600;     | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 1780 OR obrat <= 3600;   |
 | [# 23 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/23.md)   | SELECT ucet, obrat, VS FROM Obraty     | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 1780 OR obrat <= 3600;   |
 | [# 24 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/24.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 1780 UNION ( SELECT ucet, obrat, VS FROM Obraty WHERE obrat <= 3600);     | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 1780 OR obrat <= 3600;   |
-| [# 25 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/25.md)   | ...     | ....   |
-| [# 26 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/26.md)   | ...     | ....   |
-| [# 27 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/27.md)   | ...     | ....   |
-| [# 28 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/28.md)   | ...     | ....   |
-| [# 29 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/29.md)   | ...     | ....   |
-| [# 30 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/30.md)   | ...     | ....   |
-| [# 31 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/31.md)   | ...     | ....   |
+| [# 25 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/25.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat <= 1780 OR obrat >= 3600;     | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 1780 OR obrat <= 3600;   |
+| [# 26 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/26.md)   | SELECT os_cislo, jmeno, prijmeni, pocet_deti FROM Zamestnanci WHERE pocet_deti<2 OR pocet_deti IS NULL;     | SELECT os_cislo, jmeno, prijmeni, pocet_deti
+FROM Zamestnanci;   |
+| [# 27 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/27.md)   | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky WHERE z_dovozu=1 OR sklad=1;     | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky;   |
+| [# 27b #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/27b.md)   | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky WHERE z_dovozu=1 AND sklad=1;     | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky;   |
+| [# 28 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/28.md)   | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky WHERE NOT z_dovozu=1 AND NOT sklad=1;     | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky;  |
+| [# 29 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/29.md)   | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky WHERE NOT z_dovozu=1 OR NOT sklad=1     | SELECT cislo, nazev, cena, sklad, z_dovozu FROM Vyrobky;   |
+| [# 30 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/30.md)   | SELECT cislo, nazev, cena FROM Vyrobky WHERE cena BETWEEN 10 AND 20 OR cena BETWEEN 100 AND 140;     | SELECT cislo, nazev, cena FROM Vyrobky;  |
+| [# 30b #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/30b.md)   | SELECT cislo, nazev, cena FROM Vyrobky WHERE cena BETWEEN 10 AND 20 AND cena BETWEEN 100 AND 140;     | SELECT cislo, nazev, cena FROM Vyrobky;  |
+| [# 31 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/31.md)   | 	SELECT * FROM Vyrobky WHERE cena*sazba_dph/100>3;     | SELECT * FROM Vyrobky;   |
 | [# 32 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/32.md)   | ...     | ....   |
 | [# 33 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/33.md)   | ...     | ....   |
 | [# 34 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/34.md)   | ...     | ....   |
