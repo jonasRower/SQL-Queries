@@ -3,7 +3,7 @@ Stránky zobrazují porovnání páru SQL dotazu.
 
 ## Dostupné verze:
 1) soubor html
-2) exportované tabulky do md - beta verze
+2) exportované tabulky do md - [beta verze](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/SQL_queries.md)
 
 ## Soubor html - postup spuštění:
 1) Stáhnout tento projekt a rozbalit v PC
