@@ -1,7 +1,7 @@
 <table>
     <tr>
         <th colspan="6">SELECT * FROM faktury<br>WHERE odberatel IN(1, 11, 47, 112);</th>
-        <th>SELECT * FROM faktury;</th>
+        <th colspan="6">SELECT * FROM faktury;</th>
     </tr>
     <tr>
         <td>cislo</td>
