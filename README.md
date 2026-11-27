@@ -1,4 +1,14 @@
 # SQL-Queries
-Html pages about SQL
+Stránky zobrazují porovnání páru SQL dotazu.
 
-please download and run index.html
+## Dostupné verze:
+1) soubor html
+2) exportované tabulky do md - beta verze
+
+## Soubor html - postup spuštění:
+1) Stáhnout tento projekt a rozbalit v PC
+2) Otevřít soubor [z počítače](https://github.com/jonasRower/SQL-Queries/blob/main/index.html)
+3) Měl by se zobrazit soubor html ![index](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/png/indexHtml.png)
+   
+
+
