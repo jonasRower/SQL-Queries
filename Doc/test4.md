@@ -1,6 +1,6 @@
 <table>
     <tr>
-        <th>SELECT * FROM faktury<br>WHERE odberatel IN(1, 11, 47, 112);</th>
+        <th colspan="Cstr(pocetSlouc)">SELECT * FROM faktury<br>WHERE odberatel IN(1, 11, 47, 112);</th>
         <th>SELECT * FROM faktury;</th>
     </tr>
     <tr>
