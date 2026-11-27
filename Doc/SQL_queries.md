@@ -54,7 +54,8 @@ Některé tabulky nemusejí být zatím správně....
 | [# 35 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/35.md)   | SELECT * FROM nobel_win WHERE year>=1971 AND subject='Chemistry';     | SELECT * FROM nobel_win;   |
 | [# 36 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/36.md)   | SELECT * FROM nobel_win WHERE winner LIKE 'Louis%';     | SELECT * FROM nobel_win;   |
 | [# 37 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/37.md)   | 	SELECT * FROM nobel_win WHERE (subject ='Chemistry' AND year=1970) UNION (SELECT * FROM nobel_win WHERE (subject ='Economics' AND year=1971));     | SELECT * FROM nobel_win;   |
-| [# 38 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/38.md)   | ...     | ....   |
+| [# 38 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/38.md)   | SELECT * FROM nobel_win WHERE year=1970
+AND subject NOT IN('Physiology','Economics');     | SELECT * FROM nobel_win;   |
 | [# 39 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/39.md)   | ...     | ....   |
 | [# 40 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/40.md)   | ...     | ....   |
 | [# 41 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/41.md)   | ...     | ....   |
