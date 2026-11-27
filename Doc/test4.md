@@ -2,7 +2,7 @@
     <tr>
         <th colspan="7">$\color{blue}{\text{SELECT * FROM faktury<br>WHERE odberatel IN(1, 11, 47, 112);}}$</th>
         <th></th>
-        <th colspan="7">$\color{blue}{\text{SEL}}$$\color{blue}{\text{ECT * FROM faktury}}$</th>
+        <th colspan="7">$\color{blue}{\text{SEL}}\color{blue}{\text{ECT * FROM faktury}}$</th>
     </tr>
     <tr>
         <td>cislo</td>
