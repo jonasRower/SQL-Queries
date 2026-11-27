@@ -1,4 +1,13 @@
 
+# Porovnání dotazů SQL
+
+## Beta verze
+Na konverzi tabulek se momentálně pracuje ....
+Správná data obsahuje aplikace - soubor index.html.
+Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html
+
+
+
 | id    | Tabulka vlevo  | Tabulka vpravo  | 
 | ----- | ----------  | ---------  |
 | [## 1 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/1.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury;    |
