@@ -12,6 +12,11 @@ Stránky zobrazují porovnání párů SQL dotazů.
 4) Po kliknutí na id, by se mělo zobrazit porovnání, jako např. : ![porov](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/png/srovnani.png)
 
 ## Exportované tabulky do md - beta verze:
-Zatím je k dispozici beta verze [tabulky v md](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/SQL_queries.md)
+Zatím je k dispozici beta verze [tabulky v md](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/SQL_queries.md) <br><br>
+
+Pro konverzi tabulek jsme použili nástrojů uložených zde: [Programy ve VBA](https://github.com/jonasRower/SQL-Queries/tree/main/Doc/tools-VBA) <br>
+Mezikrokem jsou převedené tabulky v souborech [xlsx](https://github.com/jonasRower/SQL-Queries/tree/main/Doc/xlsxTab)
+
+
 
 
