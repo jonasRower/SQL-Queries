@@ -50,12 +50,11 @@ FROM Zamestnanci;   |
 | [# 30 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/30.md)   | SELECT cislo, nazev, cena FROM Vyrobky WHERE cena BETWEEN 10 AND 20 OR cena BETWEEN 100 AND 140;     | SELECT cislo, nazev, cena FROM Vyrobky;  |
 | [# 30b #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/30b.md)   | SELECT cislo, nazev, cena FROM Vyrobky WHERE cena BETWEEN 10 AND 20 AND cena BETWEEN 100 AND 140;     | SELECT cislo, nazev, cena FROM Vyrobky;  |
 | [# 31 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/31.md)   | 	SELECT * FROM Vyrobky WHERE cena*sazba_dph/100>3;     | SELECT * FROM Vyrobky;   |
-| [# 32 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/32.md)   | ...     | ....   |
-| [# 33 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/33.md)   | ...     | ....   |
-| [# 34 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/34.md)   | ...     | ....   |
-| [# 35 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/35.md)   | ...     | ....   |
-| [# 36 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/36.md)   | ...     | ....   |
-| [# 37 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/37.md)   | ...     | ....   |
+| [# 32 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/32.md)   | SELECT name,city FROM salesman WHERE city='Paris';     | SELECT name,city FROM salesman;   |
+| [# 34 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/34.md)   | SELECT * FROM nobel_win WHERE year = 1970 AND subject = 'Literature';     | SELECT * FROM nobel_win WHERE year=1970;   |
+| [# 35 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/35.md)   | SELECT * FROM nobel_win WHERE year>=1971 AND subject='Chemistry';     | SELECT * FROM nobel_win;   |
+| [# 36 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/36.md)   | SELECT * FROM nobel_win WHERE winner LIKE 'Louis%';     | SELECT * FROM nobel_win;   |
+| [# 37 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/37.md)   | 	SELECT * FROM nobel_win WHERE (subject ='Chemistry' AND year=1970) UNION (SELECT * FROM nobel_win WHERE (subject ='Economics' AND year=1971));     | SELECT * FROM nobel_win;   |
 | [# 38 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/38.md)   | ...     | ....   |
 | [# 39 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/39.md)   | ...     | ....   |
 | [# 40 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/40.md)   | ...     | ....   |
