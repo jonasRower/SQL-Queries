@@ -9,7 +9,7 @@ Stránky zobrazují porovnání párů SQL dotazů.
 1) Stáhnout tento projekt a rozbalit v PC
 2) Otevřít soubor [z počítače](https://github.com/jonasRower/SQL-Queries/blob/main/index.html)
 3) Měl by se zobrazit soubor html ![index](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/png/indexHtml.png)
-4) Mělo by se zobrazit porovnání, jako např. : ![porov](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/png/srovnani.png)
+4) Po kliknutí na id, by se mělo zobrazit porovnání, jako např. : ![porov](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/png/srovnani.png)
 
 ## Exportované tabulky do md - beta verze:
 Zatím je k dispozici beta verze [tabulky v md](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/SQL_queries.md)
