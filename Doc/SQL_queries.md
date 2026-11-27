@@ -7,7 +7,9 @@ Správná data obsahuje aplikace - soubor index.html. <br>
 Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html [Stáhnout celý projekt a otevřít tento soubor v PC](https://github.com/jonasRower/SQL-Queries/blob/main/index.html). <br> 
 
 <br>
-V aplikaci by měla být data správná.
+V aplikaci by měla být data správná. <br><br>
+
+## Beta verze - tabulka
 
 
 
