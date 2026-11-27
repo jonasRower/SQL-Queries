@@ -18,15 +18,15 @@ Některé tabulky nemusejí být zatím správně....
 | ----- | ----------  | ---------  |
 | [# 1 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/1.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury;    |
 | [# 2 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury WHERE odberatel IN(1, 11, 247, 112);    |
-| [## 4 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/4.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat <= 8300;    | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 8300;    |
-| [## 5 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/5.md)   | SELECT * from Obraty WHERE datum >'2018-03-01';     | SELECT * from Obraty;   |
-| [## 6 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/6.md)   | 	SELECT * FROM Vyrobky WHERE cena IS NOT NULL;     | SELECT * FROM Vyrobky;   |
-| [## 7 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/7.md)   | 	SELECT cislo, nazev, sklad FROM Vyrobky WHERE NOT sklad !=2;     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2; |
-| [## 8 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/8.md)   | SELECT cislo, nazev, sklad FROM Vyrobky WHERE NOT sklad IN(2, 3);     | SELECT cislo, nazev,sklad FROM Vyrobky;   |
-| [## 9 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/9.md)   | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad IN(2, 3);     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2 OR sklad = 3;   |
-| [## 10 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/10.md)   | SELECT cislo, nazev, cena FROM vyrobky WHERE cena BETWEEN 20 AND 50;     | SELECT cislo, nazev, cena FROM vyrobky;   |
-| [## 11 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/11.md)   | SELECT ucet, VS, datum, obrat FROM obraty WHERE datum BETWEEN '2018-02-01' AND '2018-02-28';     | SELECT ucet, VS, datum, obrat FROM obraty;   |
-| [## 12 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/12.md)   | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'A' AND 'L';     | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'B' AND 'K';   |
+| [# 4 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/4.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat <= 8300;    | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 8300;    |
+| [# 5 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/5.md)   | SELECT * from Obraty WHERE datum >'2018-03-01';     | SELECT * from Obraty;   |
+| [# 6 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/6.md)   | 	SELECT * FROM Vyrobky WHERE cena IS NOT NULL;     | SELECT * FROM Vyrobky;   |
+| [# 7 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/7.md)   | 	SELECT cislo, nazev, sklad FROM Vyrobky WHERE NOT sklad !=2;     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2; |
+| [# 8 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/8.md)   | SELECT cislo, nazev, sklad FROM Vyrobky WHERE NOT sklad IN(2, 3);     | SELECT cislo, nazev,sklad FROM Vyrobky;   |
+| [# 9 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/9.md)   | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad IN(2, 3);     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2 OR sklad = 3;   |
+| [# 10 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/10.md)   | SELECT cislo, nazev, cena FROM vyrobky WHERE cena BETWEEN 20 AND 50;     | SELECT cislo, nazev, cena FROM vyrobky;   |
+| [# 11 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/11.md)   | SELECT ucet, VS, datum, obrat FROM obraty WHERE datum BETWEEN '2018-02-01' AND '2018-02-28';     | SELECT ucet, VS, datum, obrat FROM obraty;   |
+| [# 12 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/12.md)   | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'A' AND 'L';     | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'B' AND 'K';   |
 | [## 12b ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/12b.md)   | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'A' AND 'L';     | SELECT * FROM zamestnanciWHERE prijmeni BETWEEN 'B' AND 'K';   |
 | [## 13 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/13.md)   | SELECT prijmeni, jmeno, pocet_deti FROM zamestnanci WHERE pocet_deti IN (1,3);     | SELECT prijmeni, jmeno, pocet_deti FROM zamestnanci WHERE pocet_deti = 1 OR pocet_deti = 3;   | 
 | [## 14 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/14.md)   | SELECT * FROM Obraty WHERE vs IN('4587102', '0020514789');    | SELECT * FROM Obraty;   |
