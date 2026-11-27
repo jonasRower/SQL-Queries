@@ -4,7 +4,7 @@
 ## Beta verze
 Na konverzi tabulek se momentálně pracuje .... <br>
 Správná data obsahuje aplikace - soubor index.html. <br>
-Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html [Stáhnout celá projekt a otevřít tento soubor v PC](https://github.com/jonasRower/SQL-Queries/blob/main/index.html). <br> 
+Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html [Stáhnout celý projekt a otevřít tento soubor v PC](https://github.com/jonasRower/SQL-Queries/blob/main/index.html). <br> 
 
 
 
