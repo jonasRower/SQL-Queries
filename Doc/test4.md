@@ -5,21 +5,21 @@
         <th colspan="7">$\color{blue}{\text{SE}}\color{blue}{\text{LECT * FROM faktury;}}$</th>
     </tr>
     <tr>
-        <td>cislo</td>
-        <td>odberatel</td>
-        <td>vystaveno</td>
-        <td>splatnost</td>
-        <td>castka</td>
-        <td>zaplaceno</td>
-        <td>poznamka</td>
-        <td></td>
-        <td>cislo</td>
-        <td>odberatel</td>
-        <td>vystaveno</td>
-        <td>splatnost</td>
-        <td>castka</td>
-        <td>zaplaceno</td>
-        <td>poznamka</td>
+        <td><b>cislo</b></td>
+        <td><b>odberatel</b></td>
+        <td><b>vystaveno</b></td>
+        <td><b>splatnost</b></td>
+        <td><b>castka</b></td>
+        <td><b>zaplaceno</b></td>
+        <td><b>poznamka</b></td>
+        <td><b></b></td>
+        <td><b>cislo</b></td>
+        <td><b>odberatel</b></td>
+        <td><b>vystaveno</b></td>
+        <td><b>splatnost</b></td>
+        <td><b>castka</b></td>
+        <td><b>zaplaceno</b></td>
+        <td><b>poznamka</b></td>
     </tr>
     <tr>
         <td></td>
