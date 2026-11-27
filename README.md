@@ -1,5 +1,5 @@
 # SQL-Queries
-Stránky zobrazují porovnání páru SQL dotazu.
+Stránky zobrazují porovnání párů SQL dotazů.
 
 ## Dostupné verze:
 1) soubor html
