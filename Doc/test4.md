@@ -1,8 +1,8 @@
 <table>
     <tr>
-        <th colspan="7">SEL<br>ECT * FROM faktury</th>
+        <th colspan="7">$\color{blue}{\text{SEL}}$<br>$\color{blue}{\text{ECT * FROM faktury}}$</th>
         <th></th>
-        <th colspan="7">SELECT * FROM faktury;</th>
+        <th colspan="7">$\color{blue}{\text{SELECT * FROM faktury;}}$</th>
     </tr>
     <tr>
         <td>cislo</td>
