@@ -1,8 +1,8 @@
 
 | id    | Tabulka vlevo  | Tabulka vpravo  | 
 | ----- | ----------  | ---------  |
-| [1](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/1.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury;    |
-| [2](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury WHERE odberatel IN(1, 11, 247, 112);    |
+| [1-porovnani](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/1.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury;    |
+| [2-porovnani](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury WHERE odberatel IN(1, 11, 247, 112);    |
 
 
 ID	Tabulka vlevo	Tabulka vpravo
