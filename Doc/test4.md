@@ -1,6 +1,6 @@
 <table>
     <tr>
-        <th colspan="7">$\color{blue}{\text{SEL}}$<br>$\color{blue}{\text{ECT * FROM faktury}}$</th>
+        <th colspan="7">$\color{blue}{\text{SE LECT * FROM faktury}}$<br>$\color{blue}{\text{WHERE odberatel IN(1, 11, 47, 112);}}$</th>
         <th></th>
         <th colspan="7">$\color{blue}{\text{SELECT * FROM faktury;}}$</th>
     </tr>
