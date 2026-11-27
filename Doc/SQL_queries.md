@@ -2,9 +2,9 @@
 # Porovnání dotazů SQL
 
 ## Beta verze
-Na konverzi tabulek se momentálně pracuje ....
-Správná data obsahuje aplikace - soubor index.html.
-Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html
+Na konverzi tabulek se momentálně pracuje .... <br>
+Správná data obsahuje aplikace - soubor index.html. <br>
+Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html . <br> 
 
 
 
