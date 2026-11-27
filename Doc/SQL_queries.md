@@ -1,4 +1,8 @@
 
+| id    | first_name  | last_name  | email  | is_eu_citizen  |  number_of_failed_studies  |  
+| ----- | ----------  | ---------  | -----  | -------------  |  ------------------------  |
+| 472   | jonasR1001      | SOBOTAR101    | jb.jb@sob2.jbR6001  | True   |  0                         |
+
 
 ID	Tabulka vlevo	Tabulka vpravo
 1	SELECT * FROM faktury
