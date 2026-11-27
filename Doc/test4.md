@@ -12,7 +12,6 @@
         <td><b>castka</b></td>
         <td><b>zaplaceno</b></td>
         <td><b>poznamka</b></td>
-        <td></td>
         <td><b>cislo</b></td>
         <td><b>odberatel</b></td>
         <td><b>vystaveno</b></td>
