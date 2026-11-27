@@ -31,8 +31,7 @@ Některé tabulky nemusejí být zatím správně....
 | [# 13 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/13.md)   | SELECT prijmeni, jmeno, pocet_deti FROM zamestnanci WHERE pocet_deti IN (1,3);     | SELECT prijmeni, jmeno, pocet_deti FROM zamestnanci WHERE pocet_deti = 1 OR pocet_deti = 3;   | 
 | [# 14 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/14.md)   | SELECT * FROM Obraty WHERE vs IN('4587102', '0020514789');    | SELECT * FROM Obraty;   |
 | [# 15 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/15.md)   | SELECT * FROM Obraty WHERE datum IN('2018-02-01', '2018-02-28');     | SELECT * FROM Obraty WHERE datum = '2018-02-01' OR datum = '2018-02-28';   |
-| [# 16 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/16.md)   | SELECT * FROM Vyrobky
-WHERE nazev LIKE '%pivo%';     | SELECT * FROM Vyrobky;   |
+| [# 16 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/16.md)   | SELECT * FROM Vyrobky WHERE nazev LIKE '%pivo%';     | SELECT * FROM Vyrobky;   |
 | [# 17 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/17.md)   | SELECT * FROM Obraty WHERE ucet LIKE '%0800';     | SELECT * FROM Obraty;   |
 | [# 18 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/18.md)   | SELECT * FROM Obraty WHERE obrat LIKE '__9%';     | SELECT * FROM Obraty;   |
 | [# 19 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/19.md)   | SELECT * FROM Vyrobky WHERE nazev NOT LIKE '%pivo%';     | SELECT * FROM Vyrobky;  |
