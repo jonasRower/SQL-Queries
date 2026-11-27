@@ -27,8 +27,7 @@ Některé tabulky nemusejí být zatím správně....
 | [## 10 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/10.md)   | SELECT cislo, nazev, cena FROM vyrobky WHERE cena BETWEEN 20 AND 50;     | SELECT cislo, nazev, cena FROM vyrobky;   |
 | [## 11 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/11.md)   | SELECT ucet, VS, datum, obrat FROM obraty WHERE datum BETWEEN '2018-02-01' AND '2018-02-28';     | SELECT ucet, VS, datum, obrat FROM obraty;   |
 | [## 12 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/12.md)   | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'A' AND 'L';     | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'B' AND 'K';   |
-| [## 12b ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/12b.md)   | SELECT * FROM zamestnanci
-WHERE prijmeni BETWEEN 'A' AND 'L';     | SELECT * FROM zamestnanciWHERE prijmeni BETWEEN 'B' AND 'K';   |
+| [## 12b ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/12b.md)   | SELECT * FROM zamestnanci WHERE prijmeni BETWEEN 'A' AND 'L';     | SELECT * FROM zamestnanciWHERE prijmeni BETWEEN 'B' AND 'K';   |
 | [## 13 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/13.md)   | SELECT prijmeni, jmeno, pocet_deti FROM zamestnanci WHERE pocet_deti IN (1,3);     | SELECT prijmeni, jmeno, pocet_deti FROM zamestnanci WHERE pocet_deti = 1 OR pocet_deti = 3;   | 
 | [## 14 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/14.md)   | SELECT * FROM Obraty WHERE vs IN('4587102', '0020514789');    | SELECT * FROM Obraty;   |
 | [## 15 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/15.md)   | ...     | ....   |
