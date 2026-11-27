@@ -55,14 +55,15 @@ Některé tabulky nemusejí být zatím správně....
 | [# 36 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/36.md)   | SELECT * FROM nobel_win WHERE winner LIKE 'Louis%';     | SELECT * FROM nobel_win;   |
 | [# 37 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/37.md)   | 	SELECT * FROM nobel_win WHERE (subject ='Chemistry' AND year=1970) UNION (SELECT * FROM nobel_win WHERE (subject ='Economics' AND year=1971));     | SELECT * FROM nobel_win;   |
 | [# 38 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/38.md)   | SELECT * FROM nobel_win WHERE year=1970 AND subject NOT IN('Physiology','Economics');     | SELECT * FROM nobel_win;   |
-| [# 39 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/39.md)   | ...     | ....   |
-| [# 40 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/40.md)   | ...     | ....   |
-| [# 41 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/41.md)   | ...     | ....   |
-| [# 42 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/42.md)   | ...     | ....   |
-| [# 43 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/43.md)   | ...     | ....   |
-| [# 44 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/44.md)   | ...     | ....   |
-| [# 45 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/45.md)   | ...     | ....   |
-| [# 46 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/46.md)   | ...     | ....   |
-| [# 47 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/47.md)   | ...     | ....   |
-| [# 48 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/48.md)   | ...     | ....   |
+| [# 39 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/39.md)   | SELECT * FROM nobel_win WHERE (subject ='Physiology' AND year<1971) UNION (SELECT * FROM nobel_win WHERE (subject ='Peace' AND year>=1974));     | SELECT * FROM nobel_win;   |
+| [# 40 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/40.md)   | SELECT * FROM nobel_win WHERE subject NOT LIKE 'P%';     | SELECT * FROM nobel_win;   |
+| [# 41 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/41.md)   | 	SELECT AVG(pro_price) FROM item_mast WHERE pro_com=16;     | SELECT * FROM item_mast WHERE pro_com=16;   |
+| [# 42 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/42.md)   | SELECT * FROM item_mast WHERE pro_com IN (SELECT DISTINCT pro_com FROM item_mast);     | SELECT * FROM item_mast;   |
+| [# 43 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/43.md)   | SELECT AVG(pro_price), pro_com FROM item_mast GROUP BY pro_com;     | SELECT * FROM item_mast  |
+| [# 44 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/44.md)   | SELECT AVG(pro_price), pro_com FROM item_mast GROUP BY pro_com;    | SELECT AVG(pro_price), pro_com FROM item_mast;  |
+| [# 45 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/45.md)   | SELECT * FROM item_mast WHERE pro_price = (SELECT MIN(pro_price) FROM item_mast);     | SELECT * FROM item_mast;   |
+| [# 46 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/46.md)   | SELECT * FROM customer WHERE city = 'New York' AND grade>100;     | SELECT * FROM customer;   |
+| [# 46b #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/46b.md)   | SELECT * FROM customer WHERE city = 'New York' OR grade>100;     | SELECT * FROM customer;   |
+| [# 47 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/47.md)   | SELECT * FROM customer WHERE city = 'New York' AND grade>100;     | SELECT * FROM customer WHERE city = 'New York' OR grade>100;   |
+| [# 48 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/48.md)   | SELECT * FROM customer WHERE city = 'New York' OR NOT grade>100;     | SELECT * FROM customer WHERE NOT (city = 'New York' OR grade>100);   |
 
