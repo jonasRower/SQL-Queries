@@ -16,8 +16,8 @@ Některé tabulky nemusejí být zatím správně....
 
 | id    | Tabulka vlevo  | Tabulka vpravo  | 
 | ----- | ----------  | ---------  |
-| [## 1 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/1.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury;    |
-| [## 2 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury WHERE odberatel IN(1, 11, 247, 112);    |
+| [# 1 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/1.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury;    |
+| [# 2 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md)   | SELECT * FROM faktury WHERE odberatel IN(1, 11, 47, 112);     | SELECT * FROM faktury WHERE odberatel IN(1, 11, 247, 112);    |
 | [## 4 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/4.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat <= 8300;    | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 8300;    |
 | [## 5 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/5.md)   | SELECT * from Obraty WHERE datum >'2018-03-01';     | SELECT * from Obraty;   |
 | [## 6 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/6.md)   | 	SELECT * FROM Vyrobky WHERE cena IS NOT NULL;     | SELECT * FROM Vyrobky;   |
