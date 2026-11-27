@@ -21,8 +21,7 @@ Některé tabulky nemusejí být zatím správně....
 | [## 4 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/4.md)   | SELECT ucet, obrat, VS FROM Obraty WHERE obrat <= 8300;    | SELECT ucet, obrat, VS FROM Obraty WHERE obrat >= 8300;    |
 | [## 5 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/5.md)   | SELECT * from Obraty WHERE datum >'2018-03-01';     | SELECT * from Obraty;   |
 | [## 6 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/6.md)   | 	SELECT * FROM Vyrobky WHERE cena IS NOT NULL;     | SELECT * FROM Vyrobky;   |
-| [## 7 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/7.md)   | 	SELECT cislo, nazev, sklad
-FROM Vyrobky WHERE NOT sklad !=2;     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2; |
+| [## 7 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/7.md)   | 	SELECT cislo, nazev, sklad FROM Vyrobky WHERE NOT sklad !=2;     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2; |
 | [## 8 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/8.md)   | SELECT cislo, nazev, sklad FROM Vyrobky WHERE NOT sklad IN(2, 3);     | SELECT cislo, nazev,sklad FROM Vyrobky;   |
 | [## 9 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/9.md)   | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad IN(2, 3);     | SELECT cislo, nazev, sklad FROM Vyrobky WHERE sklad = 2 OR sklad = 3;   |
 | [## 10 ##](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/10.md)   | ...     | ....   |
