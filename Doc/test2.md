@@ -3,6 +3,7 @@
   <tr>
     <th colspan="2">$\color{blue}{\text{some text}}$<br>$\color{blue}{\text{some text}}$</th>
     <th>Age</th>
+    <th>Age</th>
   </tr>
   <tr>
     <td>Some text <b> and this is bold text</b></td>
