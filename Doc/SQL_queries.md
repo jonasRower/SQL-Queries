@@ -8,7 +8,7 @@ Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html [St�
 <br>
 V aplikaci by měla být data správná. <br>
 
-Některé tabulky nemusejí být zatím správně. Konkrétní seznam chyb je popsán v 
+Některé tabulky , zde v souborech .md , nemusejí být zatím správně. Konkrétní seznam chyb je popsán v 
 [bug reportu](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/bugReport.md)
 
 
