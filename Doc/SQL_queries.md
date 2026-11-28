@@ -10,7 +10,7 @@ Pro spuštění je třeba si stáhnout tento projekt a otevřít index.html [St�
 V aplikaci by měla být data správná. <br><br>
 
 ## Beta verze - tabulka
-Některé tabulky nemusejí být zatím správně....
+Některé tabulky nemusejí být zatím správně. Konkrétní seznam chyb je popsán v [bug reportu](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/bugReport.md)
 
 
 
