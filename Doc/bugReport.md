@@ -5,6 +5,6 @@ Konkrétní popis chyby je v příslušném souboru
 
 | odkaz .md | Popis chyby | Zdrojový soubor | Zodpovídající VBA kód | Dosud zkoumaný nejbližší řádek kódu |
 | ----- | ----------  |  ----------  | -------|  ----------  |
-| [# 2 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md) |  |    | |    |
+| [# 2 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/2.md) | Jiná data než zdrojový soubor |    | |    |
 
 
