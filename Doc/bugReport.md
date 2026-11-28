@@ -17,5 +17,6 @@ Konkrétní popis chyby je v příslušném souboru
 | [# 28 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/28.md) | Chyba syntaxe v Selectu : '_' allowed only in math mode  |  [28.xlsx](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/xlsxTab/28.xlsx)  |  Správně  | [genTableMd.xlsm](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/tools-VBA/genTableMd.xlsm)  |     |
 | [# 29 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/29.md) | Chyba syntaxe v Selectu : '_' allowed only in math mode  |  [29.xlsx](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/xlsxTab/29.xlsx)  |  Správně  | [genTableMd.xlsm](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/tools-VBA/genTableMd.xlsm)  |     |
 | [# 30b #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/30b.md) | 404 - page not found  |    |    |   |  |
+| [# 31 #](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/MdGen/31.md) | Chyba syntaxe v Selectu : '_' allowed only in math mode  |  [31.xlsx](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/xlsxTab/31.xlsx)  |  Správně  | [genTableMd.xlsm](https://github.com/jonasRower/SQL-Queries/blob/main/Doc/tools-VBA/genTableMd.xlsm)  |     |
 
 
